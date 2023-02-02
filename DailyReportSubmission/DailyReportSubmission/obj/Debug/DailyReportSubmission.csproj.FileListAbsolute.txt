@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\bin\Debug\DailyReportSubmission.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\bin\Debug\DailyReportSubmission.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\bin\Debug\DailyReportSubmission.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\obj\Debug\DailyReportSubmission.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\obj\Debug\DailyReportSubmission.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\obj\Debug\DailyReportSubmission.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\obj\Debug\DailyReportSubmission.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\DailyReportSubmission\DailyReportSubmission\obj\Debug\DailyReportSubmission.pdb
