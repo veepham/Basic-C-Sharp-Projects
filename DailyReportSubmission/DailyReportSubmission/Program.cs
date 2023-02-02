@@ -18,25 +18,25 @@ namespace DailyReportSubmission
             Console.ReadLine();
 
             Console.WriteLine("What is your name?");
-            Console.ReadLine();
+            string yourName = Console.ReadLine();
 
             Console.WriteLine("What course are you on?");
-            Console.ReadLine();
+            string yourCourse = Console.ReadLine();
 
             Console.WriteLine("What page number?");
-            Console.ReadLine();
+            int yourPage = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Do you need help with anything? Please answer true or false.");
-            Console.ReadLine();
+            bool helpMe = Convert.ToBoolean(Console.ReadLine());
 
             Console.WriteLine("Were there any positive experiences you’d like to share? Please give specifics.");
-            Console.ReadLine();
+            string yourExp = Console.ReadLine();
 
             Console.WriteLine("Is there any other feedback you’d like to provide? Please be specific.");
-            Console.ReadLine();
+            string feedback = Console.ReadLine();
 
             Console.WriteLine("How many hours did you study?");
-            Console.ReadLine();
+            int hoursStudy = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Thank you for your answers. An Instructor will respond to this shortly. Have a great day!");
 
