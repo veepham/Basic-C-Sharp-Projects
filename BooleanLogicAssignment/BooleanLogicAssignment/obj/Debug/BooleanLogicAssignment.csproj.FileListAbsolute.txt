@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\bin\Debug\BooleanLogicAssignment.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\bin\Debug\BooleanLogicAssignment.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\bin\Debug\BooleanLogicAssignment.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\BooleanLogicAssignment\BooleanLogicAssignment\obj\Debug\BooleanLogicAssignment.pdb
