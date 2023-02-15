@@ -29,7 +29,7 @@ namespace BranchingSubmissionAssignment
                 Console.WriteLine("Please enter package length: ");
                 double length = Convert.ToDouble(Console.ReadLine());
                 double totalDimensions = width + height + length;
-                double cost = totalDimensions * weight / 100.00;
+                double cost = width * height * length * weight / 100.00;
 
                 if (totalDimensions > 50.00)
                 {
