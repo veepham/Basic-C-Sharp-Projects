@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\obj\Debug\StringsAndIntegers.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\obj\Debug\StringsAndIntegers.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\obj\Debug\StringsAndIntegers.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\bin\Debug\StringsAndIntegers.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\bin\Debug\StringsAndIntegers.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\bin\Debug\StringsAndIntegers.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\obj\Debug\StringsAndIntegers.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\StringsAndIntegers\StringsAndIntegers\obj\Debug\StringsAndIntegers.pdb
