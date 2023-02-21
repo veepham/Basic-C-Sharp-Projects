@@ -18,10 +18,15 @@ namespace IterationAssignment
 
             for (int i = 0; i < stringArray.Length; i++)
             {
-                stringArray[i] = stringArray[i] + name;
-                Console.WriteLine(stringArray[i]);
+                stringArray[i] = stringArray[i] + name;             
             }
-            Console.ReadLine();
+
+            for (int i = 0; i < stringArray.Length; i++)
+            {
+                Console.WriteLine(stringArray[i]);
+                Console.ReadLine();
+            }
+            
 
             //________________****************_________________________//
 
@@ -77,13 +82,12 @@ namespace IterationAssignment
                 {
                     Console.WriteLine("The player you chose is listed in our list at number " + players.IndexOf(star));
                     break;
-                }              
-                else
-                {
-                    Console.WriteLine("That is not a starting 5 Trailblazers player.");
-                    break;
                 }
+            }
 
+            if (!players.Contains(star))
+            {
+                Console.WriteLine("This player is not on the starting 5 list.");
             }
             Console.ReadLine();
 
@@ -114,23 +118,19 @@ namespace IterationAssignment
 
             //________________****************_________________________//
             //Assignment Part 6:
-            List<string> letters = new List<string>() { "A", "B", "C", "D", "E", "B" };
+            List<string> letters = new List<string>() { "A", "B", "C", "B", "E", "B" };
+            List<string> duplicates = new List<string>() { };
 
             foreach (string letter in letters)
-            {
-                bool noMatches = false;
-                for (int a = 0; a < letters.Count; a++) //checking "letter" with iterating through list for a match
+            {                
+                if (duplicates.Contains(letter))
                 {
-                    if (letters[a] != letter)
-                    {
-                        noMatches = true;
-                        Console.Write(letter + " - this item is unique\n");
-                        break;
-                    }
+                    Console.WriteLine(letter + " - this item is a duplicate.");
                 }
-                if (noMatches == false)
+                else
                 {
-                    Console.WriteLine(letter + " - this item is a duplicate\n");
+                    Console.Write(letter + " - this item is unique.\n");
+                    duplicates.Add(letter);
                 }
             }
             Console.ReadLine();

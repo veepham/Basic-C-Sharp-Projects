@@ -6,3 +6,11 @@ C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\IterationAssignment\IterationA
 C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.csproj.CoreCompileInputs.cache
 C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.exe
 C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.pdb
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\bin\Debug\IterationAssignment.exe.config
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\bin\Debug\IterationAssignment.exe
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\bin\Debug\IterationAssignment.pdb
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.exe
+C:\Users\vipha\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.pdb
