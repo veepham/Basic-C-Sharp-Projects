@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\bin\Debug\MainMethodSubmission.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\bin\Debug\MainMethodSubmission.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\bin\Debug\MainMethodSubmission.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\obj\Debug\MainMethodSubmission.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\obj\Debug\MainMethodSubmission.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\obj\Debug\MainMethodSubmission.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\obj\Debug\MainMethodSubmission.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\MainMethodSubmission\MainMethodSubmission\obj\Debug\MainMethodSubmission.pdb
