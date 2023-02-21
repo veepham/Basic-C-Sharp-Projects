@@ -15,20 +15,32 @@ namespace ArraySubmissionApp
 
             Console.WriteLine("Pick a number 0-4 to display a word.");
             int chosenNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The position you selected contains the animal: " + stringArray[chosenNum]);
-            Console.ReadLine();
+
+            if (chosenNum < 0 || chosenNum > stringArray.Length - 1)
+            {
+                Console.WriteLine("This position does not exist in the array. Better luck next time.");
+                Console.ReadLine();
+
+            }
+            else
+            {
+                Console.WriteLine("The position you selected contains the animal: " + stringArray[chosenNum]);
+                Console.ReadLine();
+            }
+            
 
             int[] numArray = { 1, 2, 3, 4, 5, 6 };
             Console.WriteLine("Pick a number to display a number from the array.");
             int arrayNum = Convert.ToInt32(Console.ReadLine());
-            if (arrayNum < 6) 
+            if (arrayNum < 0 || arrayNum > numArray.Length - 1) 
             {
-                Console.WriteLine("The position you selected contains the number: " + numArray[arrayNum]);
+                Console.WriteLine("This position does not exist in the array. Better luck next time.");
                 Console.ReadLine();
+                
             }
             else
             {
-                Console.WriteLine("This position does not exist in the array. Better luck next time.");
+                Console.WriteLine("The position you selected contains the number: " + numArray[arrayNum]);
                 Console.ReadLine();
             }
             
@@ -39,8 +51,19 @@ namespace ArraySubmissionApp
 
             Console.WriteLine("Pick a number from 0-2 for a random sentence.");
             int indexNum = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(list[indexNum]);
-            Console.ReadLine();
+            if (indexNum < 0 || indexNum > list.Count - 1)
+            {
+                Console.WriteLine("This position does not exist in the list. Better luck next time.");
+                Console.ReadLine();
+
+            }
+            else
+            {
+                Console.WriteLine(list[indexNum]);
+                Console.ReadLine();
+            }
+
+            
         }
     }
 }
