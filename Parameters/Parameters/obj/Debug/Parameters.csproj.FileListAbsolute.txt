@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\bin\Debug\Parameters.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\bin\Debug\Parameters.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\bin\Debug\Parameters.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\obj\Debug\Parameters.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\obj\Debug\Parameters.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\obj\Debug\Parameters.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\obj\Debug\Parameters.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Parameters\Parameters\obj\Debug\Parameters.pdb
