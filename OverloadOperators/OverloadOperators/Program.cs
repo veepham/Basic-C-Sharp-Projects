@@ -12,7 +12,8 @@ namespace OverloadOperators
         {
             Employee em1 = new Employee() { FirstName = "Bob", LastName = "Smith", Id = 1 };
             Employee em2 = new Employee() { FirstName = "Bob", LastName = "Jones", Id = 2 };
-            em1 == em2;
+            Console.WriteLine(em1 == em2);
+            Console.ReadLine();
             
         }
     }
