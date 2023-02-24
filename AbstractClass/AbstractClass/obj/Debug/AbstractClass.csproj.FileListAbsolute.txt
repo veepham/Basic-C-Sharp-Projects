@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\bin\Debug\AbstractClass.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\bin\Debug\AbstractClass.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\bin\Debug\AbstractClass.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\obj\Debug\AbstractClass.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\obj\Debug\AbstractClass.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\obj\Debug\AbstractClass.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\obj\Debug\AbstractClass.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\AbstractClass\AbstractClass\obj\Debug\AbstractClass.pdb
