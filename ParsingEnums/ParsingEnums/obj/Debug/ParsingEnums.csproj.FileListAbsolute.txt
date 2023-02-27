@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\bin\Debug\ParsingEnums.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\bin\Debug\ParsingEnums.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\bin\Debug\ParsingEnums.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\obj\Debug\ParsingEnums.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\obj\Debug\ParsingEnums.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\obj\Debug\ParsingEnums.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\obj\Debug\ParsingEnums.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\ParsingEnums\ParsingEnums\obj\Debug\ParsingEnums.pdb
