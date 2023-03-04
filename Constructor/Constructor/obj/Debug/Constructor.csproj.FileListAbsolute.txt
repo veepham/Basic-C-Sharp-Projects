@@ -1,0 +1,8 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\obj\Debug\Constructor.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\obj\Debug\Constructor.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\obj\Debug\Constructor.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\bin\Debug\Constructor.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\bin\Debug\Constructor.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\bin\Debug\Constructor.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\obj\Debug\Constructor.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\Constructor\Constructor\obj\Debug\Constructor.pdb
