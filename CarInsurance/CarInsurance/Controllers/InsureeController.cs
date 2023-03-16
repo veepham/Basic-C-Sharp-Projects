@@ -51,6 +51,7 @@ namespace CarInsurance.Controllers
             if (ModelState.IsValid)
             {
                 db.Insurees.Add(insuree);
+                insuree.Quote = CalculateQuote(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -124,353 +125,65 @@ namespace CarInsurance.Controllers
             base.Dispose(disposing);
         }
 
-        public int CalculateQuote()
+        public ActionResult Admin()
         {
-            using (InsuranceEntities db = new InsuranceEntities())
-            {
-                var insurees = db.Insurees;
-                int costBase = 50;
+            return View(db.Insurees.ToList());
+        }
 
-                foreach (var insuree in insurees)
+        public decimal CalculateQuote(Insuree insuree)
+        {
+            decimal costBase = 50;
+            var today = DateTime.Today;
+            int age = today.Year - insuree.DateofBirth.Year;
+
+
+                if (age <= 18)
                 {
-                    var today = DateTime.Today;
-                    int age = today.Year - insuree.DateofBirth.Year;
-                    if (age <= 18)
-                    {
-                        int ageFee = 100 + costBase;
-                        if (insuree.CarYear < 2000 || insuree.CarYear > 2015)
-                        {
-                            int yearA = 25 + ageFee;
-                            if (insuree.CarMake == "Porsche")
-                            {
-                                int makeA = 25 + yearA;
-                                if (insuree.CarModel == "911 Carrera")
-                                {
-                                    int g = 25 + makeA;
-                                    int feeTicket = insuree.SpeedingTickets * 10;
-                                    int subTotal = g + feeTicket;
-                                    if (insuree.DUI == true)
-                                    {
-                                        double upCharge = 0.25 * subTotal;
-                                        int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                        if (insuree.CoverageType == true)
-                                        {
-                                            double coverFee = 0.5 * feeTotal;
-                                            int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                            insuree.Quote = finalTotal;
-                                            db.SaveChanges();
-                                        }
-                                    }
-                                    else // no DUI
-                                    {
-                                        double coverFee = 0.5 * subTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-                                }
-                                else // not 911 carrera
-                                {
-                                    int feeTicket = insuree.SpeedingTickets * 10;
-                                    int subTotal = feeTicket + makeA;
-                                    if (insuree.DUI == true)
-                                    {
-                                        double upCharge = 0.25 * subTotal;
-                                        int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                        if (insuree.CoverageType == true)
-                                        {
-                                            double coverFee = 0.5 * feeTotal;
-                                            int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                            insuree.Quote = finalTotal;
-                                            db.SaveChanges();
-                                        }
-                                    }
-                                    else // not 911, no dui
-                                    {
-                                        double coverFee = 0.5 * subTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-
-                                }
-                            }
-                            else //not a porsche but < 2000 and  > 2015
-                            {
-                                int feeTicket = insuree.SpeedingTickets * 10;
-                                int subTotal = feeTicket + yearA;
-                                if (insuree.DUI == true)
-                                {
-                                    double upCharge = 0.25 * subTotal;
-                                    int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                    if (insuree.CoverageType == true)
-                                    {
-                                        double coverFee = 0.5 * feeTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-                                }
-                                else //no dui
-                                {
-                                    double coverFee = 0.5 * subTotal;
-                                    int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                    insuree.Quote = finalTotal;
-                                    db.SaveChanges();
-                                }
-                            }
-                        }
-                        else // car is between 2000 and 2015
-                        {
-                            int feeTicket = insuree.SpeedingTickets * 10;
-                            int subTotal = feeTicket + ageFee;
-                            if (insuree.DUI == true)
-                            {
-                                double upCharge = 0.25 * subTotal;
-                                int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                if (insuree.CoverageType == true)
-                                {
-                                    double coverFee = 0.5 * feeTotal;
-                                    int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                    insuree.Quote = finalTotal;
-                                    db.SaveChanges();
-                                }
-                            }
-                            else //no dui
-                            {
-                                double coverFee = 0.5 * subTotal;
-                                int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                insuree.Quote = finalTotal;
-                                db.SaveChanges();
-                            }
-                        }
-                    }
-                    else if (age > 18 || age < 26)
-                    {
-                        int ageFee = 50 + costBase;
-                        if (insuree.CarYear < 2000 || insuree.CarYear > 2015)
-                        {
-                            int yearA = 25 + ageFee;
-                            if (insuree.CarMake == "Porsche")
-                            {
-                                int makeA = 25 + yearA;
-                                if (insuree.CarModel == "911 Carrera")
-                                {
-                                    int g = 25 + makeA;
-                                    int feeTicket = insuree.SpeedingTickets * 10;
-                                    int subTotal = g + feeTicket;
-                                    if (insuree.DUI == true)
-                                    {
-                                        double upCharge = 0.25 * subTotal;
-                                        int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                        if (insuree.CoverageType == true)
-                                        {
-                                            double coverFee = 0.5 * feeTotal;
-                                            int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                            insuree.Quote = finalTotal;
-                                            db.SaveChanges();
-                                        }
-                                    }
-                                    else // no DUI
-                                    {
-                                        double coverFee = 0.5 * subTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-                                }
-                                else // not 911 carrera
-                                {
-                                    int feeTicket = insuree.SpeedingTickets * 10;
-                                    int subTotal = feeTicket + makeA;
-                                    if (insuree.DUI == true)
-                                    {
-                                        double upCharge = 0.25 * subTotal;
-                                        int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                        if (insuree.CoverageType == true)
-                                        {
-                                            double coverFee = 0.5 * feeTotal;
-                                            int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                            insuree.Quote = finalTotal;
-                                            db.SaveChanges();
-                                        }
-                                    }
-                                    else // not 911, no dui
-                                    {
-                                        double coverFee = 0.5 * subTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-
-                                }
-                            }
-                            else //not a porsche but < 2000 and  > 2015
-                            {
-                                int feeTicket = insuree.SpeedingTickets * 10;
-                                int subTotal = feeTicket + yearA;
-                                if (insuree.DUI == true)
-                                {
-                                    double upCharge = 0.25 * subTotal;
-                                    int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                    if (insuree.CoverageType == true)
-                                    {
-                                        double coverFee = 0.5 * feeTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-                                }
-                                else //no dui
-                                {
-                                    double coverFee = 0.5 * subTotal;
-                                    int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                    insuree.Quote = finalTotal;
-                                    db.SaveChanges();
-                                }
-                            }
-                        }
-                        else // car is between 2000 and 2015
-                        {
-                            int feeTicket = insuree.SpeedingTickets * 10;
-                            int subTotal = feeTicket + ageFee;
-                            if (insuree.DUI == true)
-                            {
-                                double upCharge = 0.25 * subTotal;
-                                int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                if (insuree.CoverageType == true)
-                                {
-                                    double coverFee = 0.5 * feeTotal;
-                                    int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                    insuree.Quote = finalTotal;
-                                    db.SaveChanges();
-                                }
-                            }
-                            else //no dui
-                            {
-                                double coverFee = 0.5 * subTotal;
-                                int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                insuree.Quote = finalTotal;
-                                db.SaveChanges();
-                            }
-                        }
-                    }
-                    else // 26 or older
-                    {
-                        int ageFee = 25 + costBase;
-                        if (insuree.CarYear < 2000 || insuree.CarYear > 2015)
-                        {
-                            int yearA = 25 + ageFee;
-                            if (insuree.CarMake == "Porsche")
-                            {
-                                int makeA = 25 + yearA;
-                                if (insuree.CarModel == "911 Carrera")
-                                {
-                                    int g = 25 + makeA;
-                                    int feeTicket = insuree.SpeedingTickets * 10;
-                                    int subTotal = g + feeTicket;
-                                    if (insuree.DUI == true)
-                                    {
-                                        double upCharge = 0.25 * subTotal;
-                                        int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                        if (insuree.CoverageType == true)
-                                        {
-                                            double coverFee = 0.5 * feeTotal;
-                                            int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                            insuree.Quote = finalTotal;
-                                            db.SaveChanges();
-                                        }
-                                    }
-                                    else // no DUI
-                                    {
-                                        double coverFee = 0.5 * subTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-                                }
-                                else // not 911 carrera
-                                {
-                                    int feeTicket = insuree.SpeedingTickets * 10;
-                                    int subTotal = feeTicket + makeA;
-                                    if (insuree.DUI == true)
-                                    {
-                                        double upCharge = 0.25 * subTotal;
-                                        int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                        if (insuree.CoverageType == true)
-                                        {
-                                            double coverFee = 0.5 * feeTotal;
-                                            int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                            insuree.Quote = finalTotal;
-                                            db.SaveChanges();
-                                        }
-                                    }
-                                    else // not 911, no dui
-                                    {
-                                        double coverFee = 0.5 * subTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-
-                                }
-                            }
-                            else //not a porsche but < 2000 and  > 2015
-                            {
-                                int feeTicket = insuree.SpeedingTickets * 10;
-                                int subTotal = feeTicket + yearA;
-                                if (insuree.DUI == true)
-                                {
-                                    double upCharge = 0.25 * subTotal;
-                                    int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                    if (insuree.CoverageType == true)
-                                    {
-                                        double coverFee = 0.5 * feeTotal;
-                                        int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                        insuree.Quote = finalTotal;
-                                        db.SaveChanges();
-                                    }
-                                }
-                                else //no dui
-                                {
-                                    double coverFee = 0.5 * subTotal;
-                                    int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                    insuree.Quote = finalTotal;
-                                    db.SaveChanges();
-                                }
-                            }
-                        }
-                        else // car is between 2000 and 2015
-                        {
-                            int feeTicket = insuree.SpeedingTickets * 10;
-                            int subTotal = feeTicket + ageFee;
-                            if (insuree.DUI == true)
-                            {
-                                double upCharge = 0.25 * subTotal;
-                                int feeTotal = Convert.ToInt32(upCharge) + subTotal;
-                                if (insuree.CoverageType == true)
-                                {
-                                    double coverFee = 0.5 * feeTotal;
-                                    int finalTotal = Convert.ToInt32(coverFee) + feeTotal;
-                                    insuree.Quote = finalTotal;
-                                    db.SaveChanges();
-                                }
-                            }
-                            else //no dui
-                            {
-                                double coverFee = 0.5 * subTotal;
-                                int finalTotal = Convert.ToInt32(coverFee) + subTotal;
-                                insuree.Quote = finalTotal;
-                                db.SaveChanges();
-                            }
-                        }
-                    }                   
-
+                    costBase = decimal.Add(costBase, 100);
+                }
+                else if (age >= 19 && age <= 25)
+                {
+                    costBase = decimal.Add(costBase, 50);
+                }
+                else
+                {
+                    costBase = decimal.Add(costBase, 25);
                 }
 
-                return ;
-            }            
-            
+                if (insuree.CarYear < 2000 || insuree.CarYear > 2015)
+                {
+                    costBase = decimal.Add(costBase, 25);
+                }
+
+                if (insuree.CarMake == "Porsche")
+                {
+                    costBase = decimal.Add(costBase, 25);
+                }
+                if (insuree.CarModel == "911 Carrera")
+                {
+                    costBase = decimal.Add(costBase, 25);
+                }
+
+                if (insuree.SpeedingTickets > 0)
+                {
+                    decimal feeTicket = insuree.SpeedingTickets * 10;
+                    costBase = decimal.Add(costBase, feeTicket);
+                }
+
+                if (insuree.DUI == true)
+                {
+                    decimal upcharge = costBase / 4;
+                    costBase = decimal.Add(costBase, upcharge);
+                }
+
+                if (insuree.CoverageType == true)
+                {
+                    decimal coverFee = costBase / 2;
+                    costBase = decimal.Add(costBase, coverFee);
+                }
+
+            return costBase;
         }
+
     }
 }
