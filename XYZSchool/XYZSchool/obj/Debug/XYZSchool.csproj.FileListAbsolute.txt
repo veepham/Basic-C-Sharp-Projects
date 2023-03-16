@@ -1,0 +1,13 @@
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\XYZSchool.exe.config
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\XYZSchool.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\XYZSchool.pdb
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\EntityFramework.dll
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\EntityFramework.xml
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\obj\Debug\XYZSchool.csproj.AssemblyReference.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\obj\Debug\XYZSchool.csproj.SuggestedBindingRedirects.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\obj\Debug\XYZSchool.csproj.CoreCompileInputs.cache
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\obj\Debug\XYZSchool.csproj.CopyComplete
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\obj\Debug\XYZSchool.exe
+C:\Users\vipha\OneDrive\Desktop\Basic_C#_Programs\XYZSchool\XYZSchool\obj\Debug\XYZSchool.pdb
